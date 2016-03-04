@@ -147,7 +147,7 @@ app.delete('/todos/:id', function (req, res){
 	}).then(function (rowsDeleted) {
 		if (rowsDeleted === 0){
 			res.status(404).json({
-				error: '无结果'
+				error: 'no data'
 			});
 		}else {
 			res.status(204).send();
